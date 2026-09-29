@@ -3,8 +3,6 @@
 Browser-console snippets for pulling the full transcript out of a Spotify
 podcast episode, plus a vim workflow for cleaning up the result.
 
-No extension, no API key, no install — paste into DevTools and go.
-
 ## Extracting
 
 Open the episode on [open.spotify.com](https://open.spotify.com), show the
