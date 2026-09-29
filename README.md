@@ -6,36 +6,7 @@ podcast episode, plus a vim workflow for cleaning up the result.
 ## Extracting
 
 Open the episode on [open.spotify.com](https://open.spotify.com), show the
-transcript panel, then open DevTools (`F12` / `Cmd+Opt+I`) and paste one of
-these into the Console.
-
-### All transcript lines
-
-```js
-[...document.querySelectorAll('#transcript-panel [data-encore-id="text"]')]
-  .map(e => e.textContent)
-  .join('\n')
-```
-
-### One line per cue, second span only
-
-Each cue `div` typically holds a speaker/timestamp span followed by the text
-span:
-
-```js
-[...document.querySelectorAll('#transcript-panel > div')]
-  .map(d => d.querySelector('span:nth-child(2)')?.textContent)
-  .filter(Boolean)
-  .join('\n')
-```
-
-### Speaker and text together
-
-```js
-[...document.querySelectorAll('#transcript-panel > div')]
-  .map(d => [...d.querySelectorAll('span')].map(s => s.textContent).join(': '))
-  .join('\n')
-```
+transcript panel, then open DevTools (`F12` / `Cmd+Opt+I`) and paste this into the Console.
 
 ## Saving to a file
 
