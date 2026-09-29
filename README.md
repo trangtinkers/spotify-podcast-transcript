@@ -1,4 +1,4 @@
-# spotify-podcast-transcript
+# Extract Spotify Podcast Transcript
 
 Browser-console snippets for pulling the full transcript out of a Spotify
 podcast episode, plus a vim workflow for cleaning up the result.
