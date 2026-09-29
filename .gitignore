@@ -1,0 +1,6 @@
+# Extracted transcripts are the podcast creator's content — keep them local.
+*.txt
+transcript*.md
+*.md.bak
+!README.md
+!cleaning-transcripts-in-vim.md
